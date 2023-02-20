@@ -35,7 +35,7 @@ class LeaveRequest(models.Model):
     start_date=models.DateField()
     end_date=models.DateField()
     leave_days=models.IntegerField()
-    leave_status=models.PositiveSmallIntegerField(choices=STATUS_CHOICES,default='Pending') 
+    leave_status=models.PositiveSmallIntegerField(choices=STATUS_CHOICES,blank=True, null=True,default=0) 
 
 
    
