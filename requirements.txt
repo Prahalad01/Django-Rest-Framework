@@ -6,13 +6,7 @@ django-model-utils
 djangorestframework
 djangorestframework-simplejwt
 gunicornDjango
-django-cors-headers
-django-crispy-forms
-django-dotenv
 django-filter
-django-model-utils
 django-rest-swagger
-djangorestframework
-djangorestframework-simplejwt
 drf-flex-fields
 drf-yasg
