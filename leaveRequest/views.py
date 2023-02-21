@@ -26,8 +26,7 @@ class LeaveRequestView(viewsets.ModelViewSet):
     def get_queryset(self):
         if self.request.GET.get('date',None):
             date = self.request.GET.get('date')
-            # import pdb;pdb.set_trace()
-            self.queryset = self.queryset.filter(start_date__lte=date) | self.queryset.filter(end_date__lte=date)
+            self.queryset = self.queryset.filter(end_date__gte=date,start_date__lte=date)
         return self.queryset
 
 
