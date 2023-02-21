@@ -30,6 +30,8 @@ class LeaveRequest(models.Model):
 
 
     user_id=models.ForeignKey(User,on_delete=models.CASCADE)
+    first_name=models.CharField(max_length=255)
+    last_name=models.CharField(max_length=255)
     leave_type=models.PositiveSmallIntegerField(choices=ROLE_CHOICES, blank=True, null=True, default=3)
     reason=models.TextField(max_length=255)
     start_date=models.DateField()
